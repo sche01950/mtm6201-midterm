@@ -1,0 +1,183 @@
+html {
+    background-color: white;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Rubik', 'Open Sans', 'sans serif';
+    font-size: 1em;
+    background-color: #fbfbfb;
+}
+
+.back-cut {
+    background-color: white;
+}
+
+/* UNIVERSAL STYLING FOR ELEMENTS */
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    line-height: 65px;
+}
+
+p {
+    color: #4F5665;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4 {
+    color: #0B132A;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    line-height: 50px;
+}
+
+.fa-circle-check {
+    padding-right: 1.25em;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/* UNIVERSAL STYLING FOR ELEMENTS */
+
+.mast {
+    margin-bottom: 100px;
+}
+
+.masternav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav-image {
+    align-self: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    padding-left: 25px;
+    color: #0B132A;
+}
+
+.nav-buttons {
+    align-self: center;
+}
+
+/* Sign in/Sign up BUTTONS */
+
+.sign-in {
+    color: #0B132A;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+.sign-up {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f53838;
+    color: #f53838;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 35px;
+}
+
+/* Sign in/Sign up BUTTONS */
+
+.top-banner {
+    display: flex;
+}
+
+section img {
+    width: 100%;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bolden {
+    font-weight: 800;
+}
+
+.startedbut {
+    margin-top: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    background-color: #f53838;
+    box-shadow: 10px 10px 25px #e4a6a6;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ICON SPACER SECTION */
+
+.info-break {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 10px 25px #f3f4f5;
+    width: 1000px;
+    padding: 25px 0;
+    margin-bottom: 80px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+}
+
+.info-text {
+    font-size: 1.25em;
+    margin-left: 35px;
+}
+
+.info-text p {
+    margin-bottom: 0;
+}
+
+.numeric-text {
+    color:#0B132A;
+    font-weight: 700;
+}
+
+/* ICON SPACER SECTION */
+
+.learn-sec {
+    width: 100%;
+    display: flex;
+    margin: 2em;
+}
+
+.content-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 55px 0 120px;
+}
+
+.content-sec h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
