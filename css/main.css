@@ -9,6 +9,11 @@ html {
     background-color: #fbfbfb;
 }
 
+.color-contain {
+    background-image: linear-gradient(#fafafa, white);
+    padding-bottom: 175px;
+}
+
 .back-cut {
     background-color: white;
 }
@@ -23,7 +28,7 @@ h1 {
 
 p {
     color: #4F5665;
-    line-height: 25px;
+    line-height: 1.75em;
 }
 
 h1, h2, h3, h4 {
@@ -92,7 +97,7 @@ ul {
     border-color: #f53838;
     color: #f53838;
     background-color: white;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 50px;
     padding: 10px 35px;
 }
@@ -165,9 +170,8 @@ section img {
 /* ICON SPACER SECTION */
 
 .learn-sec {
-    width: 100%;
     display: flex;
-    margin: 2em;
+    padding-bottom: 5em;
 }
 
 .content-sec {
@@ -181,3 +185,231 @@ section img {
     font-size: 2em;
     font-weight: 500;
 }
+
+.plan-head {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+}
+
+.plan-head h2 {
+    font-size: 2em;
+}
+
+/* PAYMENT PLAN CARD FLEX SECTION STYLING START */
+
+.plan-card-sec {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 120px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 2px solid #dddddd;
+    padding: 55px;
+    border-radius: 10px;
+}
+
+.plan-card h3, .plan-card p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.flex-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+/* PAYMENT PLAN CARD FLEX SECTION STYLING END */
+
+.plan-card p {
+    font-size: 1.5em;
+}
+
+.plan-card p span {
+    color: #0B132A;
+    font-weight: 500;
+}
+
+.planbtn {
+    margin: auto;
+    width: 80%;
+    border: 2px solid #f53838;
+    color: #f53838;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 35px;
+}
+
+.planbtn:hover {
+    color: white;
+    background-color: #f53838;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 35px;
+    box-shadow: 10px 10px 25px #e4a6a6;
+}
+
+.text-head {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.text-head h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.15em;
+}
+
+.vpn-graphic {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* START OF CUSTOMER CARD FLEX STYLING */
+
+.card-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.customer-card {
+    width: 100%;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 0 1em;
+    margin: 1em 2em;
+}
+
+.cust-rev {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 1em;
+}
+
+.cust-name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.cust-name h3, .cust-name p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.rev-p {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.star {
+    margin-left: auto;
+}
+
+.flex-sel {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.arrow-sel {
+    margin-left: auto;
+    margin-right: 125px;
+}
+
+/* END OF CUSTOMER CARD FLEX STYLING */
+
+.customer-card:hover {
+    border: 2px solid #f53838;
+    color: #f53838;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-sel {
+    width: 100px;
+    margin-left: 32px;
+    width: auto;
+}
+
+.arrow-sel img:nth-child(1) {
+    margin-right: 1em;
+}
+
+/* SUBSCRIBE CARD SEL FLEX STYLING */
+
+.subscribe-card {
+    margin: 5em 5em 0 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 10px 10px 25px #e8e8e8;
+    width: 1000px;
+    padding: 2em;
+    top: -150px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* SUBSCRIBE CARD SEL FLEX STYLING */
+/* SUBSCRIBE BUTTON STAYS RELATIVE TO A FIXED POSITION */
+.sub-text {
+    width: 40%;
+}
+
+.sub-text h2 {
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.subscribebtn {
+    width: 25%;
+    padding: 2em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: #f53838;
+    box-shadow: 10px 10px 25px #e4a6a6;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    top: -50px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5em;
+}
+
+.footer-copy {
+    padding-right: 250px;
+}
+
+.footer-container-cont {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+
+.footer-container-cont div {
+    flex-basis: 100%;
+}
+
