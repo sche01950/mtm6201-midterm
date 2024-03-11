@@ -55,7 +55,7 @@ ul {
 /* UNIVERSAL STYLING FOR ELEMENTS */
 
 .mast {
-    margin-bottom: 100px;
+    margin-bottom: 6.25em;
 }
 
 .masternav {
@@ -109,7 +109,7 @@ ul {
 }
 
 section img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .top-text {
@@ -151,6 +151,12 @@ section img {
 .info-box {
     display: flex;
     align-items: center;
+    padding: 0 75px;
+    border-right: 2px solid #eeeff2;
+}
+
+.info-box:nth-child(3) {
+    border: none;
 }
 
 .info-text {
@@ -413,3 +419,111 @@ footer {
     flex-basis: 100%;
 }
 
+/* MOBILE STYLING BEGINS!! */
+
+@media screen and (max-width: 900px) {
+
+.masternav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nav-image {
+    margin-bottom: 1em;
+}
+
+.masternav :nth-child(3) {
+    margin: 1em;
+    order: 2;
+}
+
+.masternav :nth-child(2) {
+    order: 3;
+}
+
+.sign-in {
+    color: #0B132A;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+.sign-up {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f53838;
+    color: #f53838;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 35px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-list a {
+    text-decoration: none;
+    padding: 0;
+    color: #0B132A;
+    border-bottom: 1px solid #f53838;
+}
+
+.nav-list a:hover {
+    border-bottom: 2px solid #f53838;
+}
+
+.top-banner {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/***** USER/LOCATION/SERVER MOBILE VERTICAL *****/
+
+.info-break {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    box-shadow: 10px 10px 25px #f3f4f5;
+    padding: 25px 0;
+    margin-bottom: 80px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 2px solid #eeeff2;
+    border-right: none;
+}
+
+.info-text {
+    font-size: 1.25em;
+    margin-left: 35px;
+}
+
+.info-text p {
+    margin: 0 0;
+}
+
+.numeric-text {
+    color:#0B132A;
+    font-weight: 700;
+}
+
+/* ICON SPACER SECTION */
+
+.content-sec h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+}
