@@ -16,22 +16,29 @@
 </head>
 
 <body>
+    <!-- SEPERATE LINKS FOR ACCESSIBILITY NAVIGATION SKIP LINKS -->
+    <ul class="skip-links">
+        <li><a href="#nav" aria-label="Skip to main navigation">Skip to the navigation bar </a></li>
+        <li><a href="#contact" aria-label="Skip to main content">Skip to contact form content</a></li>
+        <li><a href="#subscribe" aria-label="Skip to subscription section">Skip to subscription section</a></li>
+    </ul>
+    <!-- SEPERATE LINKS FOR ACCESSIBILITY NAVIGATION SKIP LINKS -->
     <div class="container">
         <header>
-            <nav class="masternav">
+            <nav id="nav" class="masternav">
                 <img src="./assets/logo.png" alt="LaslesVPN logo" class="nav-image">
                 <div class="main-nav">
                     <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" aria-label="home link">Home</a></li>
+                        <li><a href="about.html" aria-label="about link">About</a></li>
+                        <li><a href="#" aria-label="pricing link">Pricing</a></li>
+                        <li><a href="#" aria-label="testimonials link">Testimonials</a></li>
+                        <li><a href="contact.html" aria-label="pricing link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-buttons">
-                    <a href="#" class="sign-in">Sign in</a>
-                    <a href="#" class="sign-up">Sign Up</a>
+                    <a href="#" class="sign-in" aria-label="sign in link">Sign in</a>
+                    <a href="#" class="sign-up" aria-label="sign up link">Sign Up</a>
                 </div>
             </nav>
             <div class="banner">
@@ -66,49 +73,59 @@
                 </tbody>
             </table>
             <!-- ADDING A SECTION FOR A CONTACT FORM -->
-            <section class="contact-send">
-                <h3>We would love to hear from you!</h3>
+            <section id="contact" class="contact-send">
+                <h2>We would love to hear from you!</h2>
                 <!-- ADDING THE FORM -->
                 <form action="thank.html" method="post" class="contact-flex">
                     <div>
                         <label for="fullname">Name</label>
-                        <input type="text" id="fullname" name="fullname">
+                        <input type="text" id="fullname" name="fullname" aria-label="input your full name">
                     </div>
                     <div>
                         <label for="youremail">Email</label>
                         <input type="email" id="youremail" name="youremail" placeholder="Algonquin Email"
-                            value="@algonquinlive.com">
+                            value="@algonquinlive.com" aria-label="input your email">
                     </div>
                     <div class="message-flex">
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5"
+                            aria-label="input contact message"></textarea>
                     </div>
                     <div>
                         <label for="row">What's Your Plan?</label>
-                        <select name="row" id="row">
-                            <option value="front">Free Plan</option>
-                            <option value="center" selected>Standard Plan</option>
-                            <option value="back">Premium Plan</option>
+                        <select name="row" id="row" aria-label="select your plan">
+                            <option value="front" aria-label="select free plan">Free Plan</option>
+                            <option value="center" selected aria-label="select standard plan">Standard Plan</option>
+                            <option value="back" aria-label="select premium plan">Premium Plan</option>
                         </select>
                     </div>
-                    <button type="submit" class="send-form">Send Contact Form</button>
+                    <button type="submit" class="send-form" aria-label="send contact form">Send Contact Form</button>
                 </form>
-                <div class="content-map">
+                <div class="content-map" itemscope itemtype="https://schema.org/PostalAddress">
                     <h2>Come Visit Us Here!</h2>
+                    <a href="#" aria-label="link to call us" itemprop="">+1 (613) 809-6404</a>
+                    <ul itemscope itemtype="https://schema.org/PostalAddress">
+                        <li itemprop="name">LaslesVPN</li>
+                        <li itemprop="streetAddress">88 Bloor St. Apt. 303</li>
+                        <li itemprop="addressLocality">Toronto, ON </li>
+                        <li itemprop="postalCode">L9W 2E8</li>
+                        <li itemprop="addressCountry">Canada</li>
+                    </ul>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5773.963410847439!2d-79.42971461379148!3d43.64854896715408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1710304218277!5m2!1sen!2sca"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" aria-label="google maps interactive map"></iframe>
                 </div>
             </section>
         </main>
 
-        <div class="subscribe-card">
+        <div id="subscribe" class="subscribe-card">
             <div class="sub-text">
                 <h2>Subscribe Now to Get Special Features!</h2>
                 <p>Let's subscribe with us and find the fun.</p>
             </div>
-            <button type="submit" class="subscribebtn">Subscribe Now</button>
+            <button type="submit" class="subscribebtn" aria-label="opens subscribe to emails module">Subscribe
+                Now</button>
         </div>
 
         <footer>
@@ -116,38 +133,41 @@
                 <div class="footer-copy">
                     <img src="./assets/logo.png" alt="LaslesVPN logo">
                     <p>LaslesVPN is a private virtual network that has unique features and has high security.</p>
-                    <img src="./assets/Facebook.png" alt="Facebook logo" class="soc-icon">
-                    <img src="./assets/Twitter.png" alt="Twitter logo" class="soc-icon">
-                    <img src="./assets/Instagram.png" alt="Instagram logo" class="soc-icon">
+                    <img src="./assets/Facebook.png" alt="Facebook logo" class="soc-icon"
+                        aria-label="link to company facebook account">
+                    <img src="./assets/Twitter.png" alt="Twitter logo" class="soc-icon"
+                        aria-label="link to company twitter account">
+                    <img src="./assets/Instagram.png" alt="Instagram logo" class="soc-icon"
+                        aria-label="link to company instagram account">
                     <p>&copy;2020LaslesVPN</p>
                 </div>
             </div>
             <div class="footer-container-cont">
-                <div>
+                <div class="link-text">
                     <h3>Product</h3>
-                    <p>Download </p>
-                    <p>Pricing</p>
-                    <p>Locations</p>
-                    <p>Server</p>
-                    <p>Countries</p>
-                    <p>Blog</p>
+                    <a href="#" aria-label="donwload software link">Download </a>
+                    <a href="#" aria-label="price plan link">Pricing</a>
+                    <a href="#" aria-label="contact page link">Locations</a>
+                    <a href="#" aria-label="server code link">Server</a>
+                    <a href="#" aria-label="partner countries link">Countries</a>
+                    <a href="#" aria-label="outside blog page link">Blog</a>
                 </div>
-                <div>
+                <div class="link-text">
                     <h3>Engage</h3>
-                    <p>LaslesVPN </p>
-                    <p>FAQ</p>
-                    <p>Tutorials</p>
-                    <p>About Us</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
+                    <a href="index.html" aria-label="welcome page link">LaslesVPN </a>
+                    <a href="#" aria-label="frequently asked questions link">FAQ</a>
+                    <a href="#" aria-label="tutorials video link">Tutorials</a>
+                    <a href="about.html" aria-label="about us link">About Us</a>
+                    <a href="#" aria-label="privacy policy link">Privacy Policy</a>
+                    <a href="#" aria-label="terms of service link">Terms of Service</a>
                 </div>
-                <div>
+                <div class="link-text">
                     <h3>Earn Money</h3>
-                    <p>Affiliate</p>
-                    <p>Become Partner</p>
+                    <a href="#" aria-label="affiliate page link">Affiliate</a>
+                    <a href="#" aria-label="become partner link">Become Partner</a>
                 </div>
             </div>
-        </footer>
     </div>
+    </footer>
     </div>
 </body>

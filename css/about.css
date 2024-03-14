@@ -1,3 +1,23 @@
+/* skip link styling */
+
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -5em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  .skip-links a:focus{
+    top: 0;
+  }
+
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -85,8 +105,8 @@ ul {
 .sign-up {
     border-style: solid;
     border-width: 1px;
-    border-color: #f53838;
-    color: #f53838;
+    border-color: #530101;
+    color: #530101;
     background-color: white;
     font-weight: 500;
     border-radius: 50px;
@@ -99,7 +119,6 @@ ul {
     padding: 3em;
     box-shadow: 10px 10px 20px #f3f4f5;
     border-radius: 15px;
-    margin: none;
 }
 
 h1 {
@@ -189,7 +208,7 @@ h1 {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     box-shadow: 10px 10px 25px #e4a6a6;
     border-radius: 10px;
     border: none;
@@ -217,6 +236,11 @@ footer {
 
 .footer-container-cont div {
     flex-basis: 100%;
+}
+
+.link-text a {
+    color: #4F5665;
+    line-height: 2em;
 }
 
 

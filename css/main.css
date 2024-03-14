@@ -2,6 +2,25 @@ html {
     background-color: white;
 }
 
+/* skip link styling */
+
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -5em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  .skip-links a:focus{
+    top: 0;
+  }
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -98,8 +117,8 @@ ul {
 .sign-up {
     border-style: solid;
     border-width: 1px;
-    border-color: #f53838;
-    color: #f53838;
+    border-color: #530101;
+    color: #530101;
     background-color: white;
     font-weight: 500;
     border-radius: 50px;
@@ -112,7 +131,6 @@ ul {
     margin: auto;
     display: flex;
     width: auto;
-    height: ;
     gap: 1.5em;
 }
 
@@ -141,7 +159,7 @@ section img {
     text-align: center;
     font-weight: 700;
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     box-shadow: 10px 10px 25px #e4a6a6;
     width: 200px;
     padding: 20px;
@@ -172,12 +190,16 @@ section img {
 }
 
 .info-text {
-    font-size: 1.25em;
     margin-left: 35px;
 }
 
+.info-text h2 {
+    margin-bottom: 0;    
+}
+
 .info-text p {
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 1.25em;
 }
 
 .numeric-text {
@@ -248,20 +270,20 @@ section img {
 
 /* PAYMENT PLAN CARD FLEX SECTION STYLING END */
 
-.plan-card p {
-    font-size: 1.5em;
+.plan-card h3 span {
+    color: #0B132A;
+    font-weight: 700;
 }
 
-.plan-card p span {
-    color: #0B132A;
-    font-weight: 500;
+.plan-card h3 {
+    font-weight: 400;
 }
 
 .planbtn {
     margin: auto;
     width: 80%;
-    border: 2px solid #f53838;
-    color: #f53838;
+    border: 2px solid #530101;
+    color: #530101;
     background-color: white;
     font-weight: 700;
     border-radius: 50px;
@@ -270,7 +292,7 @@ section img {
 
 .planbtn:hover {
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     font-weight: 700;
     border-radius: 50px;
     padding: 10px 35px;
@@ -407,7 +429,7 @@ section img {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     box-shadow: 10px 10px 25px #e4a6a6;
     border-radius: 10px;
     border: none;
@@ -436,6 +458,11 @@ footer {
 
 .footer-container-cont div {
     flex-basis: 100%;
+}
+
+.link-text a {
+    color: #4F5665;
+    line-height: 2em;
 }
 
 /* MOBILE STYLING BEGINS!! */
@@ -531,12 +558,12 @@ footer {
     }
 
     .info-text {
-        font-size: 1.25em;
         margin-left: 35px;
     }
 
     .info-text p {
         margin: 0 0;
+        font-size: 1.25em;
     }
 
     .numeric-text {

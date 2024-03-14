@@ -1,3 +1,24 @@
+/* skip link styling */
+
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .skip-links a{
+    position: absolute;
+    top: -5em;
+    background-color: black;
+    color:white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  .skip-links a:focus{
+    top: 0;
+  }
+
+
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -83,8 +104,8 @@ ul {
 .sign-up {
     border-style: solid;
     border-width: 1px;
-    border-color: #f53838;
-    color: #f53838;
+    border-color: #530101;
+    color: #530101;
     background-color: white;
     font-weight: 500;
     border-radius: 50px;
@@ -135,7 +156,7 @@ input {
 
 .contact-send {
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 3em;
 }
 
 /* wrap container for horizontal design */
@@ -175,7 +196,7 @@ input {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     box-shadow: 10px 10px 25px #e4a6a6;
     border-radius: 10px;
     border: none;
@@ -187,6 +208,17 @@ input {
     margin: 2em 0 2em 0;
     border: 1px solid #f53838;
     border-radius: 10px;
+}
+
+.content-map li {
+    line-height: 1.25em;
+}
+
+.content-map a {
+    font-weight: 500;
+    line-height: 1.25em;
+    color: #0B132A;
+    border-bottom: 1px solid #0B132A;
 }
 
 .subscribe-card {
@@ -221,7 +253,7 @@ input {
     text-decoration: none;
     font-weight: 700;
     color: white;
-    background-color: #f53838;
+    background-color: #530101;
     box-shadow: 10px 10px 25px #e4a6a6;
     border-radius: 10px;
     border: none;
@@ -249,6 +281,11 @@ footer {
 
 .footer-container-cont div {
     flex-basis: 100%;
+}
+
+.link-text a {
+    color: #4F5665;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 825px) {

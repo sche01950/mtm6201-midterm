@@ -16,22 +16,29 @@
 </head>
 
 <body>
+    <!-- SEPERATE LINKS FOR ACCESSIBILITY NAVIGATION SKIP LINKS -->
+    <ul class="skip-links">
+        <li><a href="#nav" aria-label="Skip to main navigation">Skip to the navigation bar </a></li>
+        <li><a href="#main" aria-label="Skip to main content">Skip to main page content</a></li>
+        <li><a href="#subscribe" aria-label="Skip to subscription section">Skip to subscription section</a></li>
+    </ul>
+    <!-- SEPERATE LINKS FOR ACCESSIBILITY NAVIGATION SKIP LINKS -->
     <div class="container">
         <header>
-            <nav class="masternav">
+            <nav id="nav" class="masternav">
                 <img src="./assets/logo.png" alt="LaslesVPN logo" class="nav-image">
                 <div class="main-nav">
                     <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" aria-label="home link">Home</a></li>
+                        <li><a href="about.html" aria-label="about link">About</a></li>
+                        <li><a href="#" aria-label="pricing link">Pricing</a></li>
+                        <li><a href="#" aria-label="testimonials link">Testimonials</a></li>
+                        <li><a href="contact.html" aria-label="contact link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-buttons">
-                    <a href="#" class="sign-in">Sign in</a>
-                    <a href="#" class="sign-up">Sign Up</a>
+                    <a href="#" class="sign-in" aria-label="sign in link">Sign in</a>
+                    <a href="#" class="sign-up" aria-label="sign up link">Sign Up</a>
                 </div>
             </nav>
 
@@ -51,11 +58,11 @@
             </div>
         </header>
         
-        <main class="content">
+        <main id="main" class="content">
             <section class="learn-sec">
             <div class="open-all">
                 <h2 class="learn-h2"> Meet Our Team</h2>
-                <img src="./assets/work.jpg" alt="image mix of LaslesVPN coworkers" class="divide-img">
+                <img src="./assets/work.jpg" alt="mix of LaslesVPN employees" class="divide-img">
                 <div class="open-container">
                     <!-- set divs seperate to flex 2 boxes side by side -->
                     
@@ -77,12 +84,12 @@
             </section>
         </main>
         
-        <div class="subscribe-card">
+        <div id="subscribe" class="subscribe-card">
             <div class="sub-text">
                 <h2>Subscribe Now to Get Special Features!</h2>
                 <p>Let's subscribe with us and find the fun.</p>
             </div>
-            <button type="submit" class="subscribebtn">Subscribe Now</button>
+            <button type="submit" class="subscribebtn" aria-label="open subscribe to emails module">Subscribe Now</button>
         </div>
 
         <!-- START OF FOOTER -->
@@ -92,36 +99,38 @@
                 <div class="footer-copy">
                     <img src="./assets/logo.png" alt="LaslesVPN logo">
                     <p>LaslesVPN is a private virtual network that has unique features and has high security.</p>
-                    <img src="./assets/Facebook.png" alt="Facebook logo" class="soc-icon">
-                    <img src="./assets/Twitter.png" alt="Twitter logo" class="soc-icon">
-                    <img src="./assets/Instagram.png" alt="Instagram logo" class="soc-icon">
+                    <!-- ARIA labels added with context that these would be links on real site -->
+                    <img src="./assets/Facebook.png" alt="Facebook logo" class="soc-icon" aria-label="link to company facebook account">
+                    <img src="./assets/Twitter.png" alt="Twitter logo" class="soc-icon" aria-label="link to company twitter account">
+                    <img src="./assets/Instagram.png" alt="Instagram logo" class="soc-icon" aria-label="link to company instagram account">
                     <p>&copy;2020LaslesVPN</p>
                 </div>
             </div>
             <div class="footer-container-cont">
-                <div>
+                <div class="link-text">
                     <h3>Product</h3>
-                    <p>Download </p>
-                    <p>Pricing</p>
-                    <p>Locations</p>
-                    <p>Server</p>
-                    <p>Countries</p>
-                    <p>Blog</p>
+                    <a href="#" aria-label="donwload software link">Download </a>
+                    <a href="#" aria-label="price plan link">Pricing</a>
+                    <a href="#" aria-label="contact page link">Locations</a>
+                    <a href="#" aria-label="server code link">Server</a>
+                    <a href="#" aria-label="partner countries link">Countries</a>
+                    <a href="#" aria-label="outside blog page link">Blog</a>
                 </div>
-                <div>
+                <div class="link-text">
                     <h3>Engage</h3>
-                    <p>LaslesVPN </p>
-                    <p>FAQ</p>
-                    <p>Tutorials</p>
-                    <p>About Us</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
+                    <a href="index.html" aria-label="welcome page link">LaslesVPN </a>
+                    <a href="#" aria-label="frequently asked questions link">FAQ</a>
+                    <a href="#" aria-label="tutorials video link">Tutorials</a>
+                    <a href="about.html" aria-label="about us link">About Us</a>
+                    <a href="#" aria-label="privacy policy link">Privacy Policy</a>
+                    <a href="#" aria-label="terms of service link">Terms of Service</a>
                 </div>
-                <div>
+                <div class="link-text"> 
                     <h3>Earn Money</h3>
-                    <p>Affiliate</p>
-                    <p>Become Partner</p>
+                    <a href="#" aria-label="affiliate page link">Affiliate</a>
+                    <a href="#" aria-label="become partner link">Become Partner</a>
                 </div>
+            </div>
             </div>
         </footer>
     </div>
