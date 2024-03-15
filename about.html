@@ -62,7 +62,14 @@
             <section class="learn-sec">
             <div class="open-all">
                 <h2 class="learn-h2"> Meet Our Team</h2>
-                <img src="./assets/work.jpg" alt="mix of LaslesVPN employees" class="divide-img">
+                <img srcset="./resolution-assets/work-320_x_213.jpg 320w,
+                            ./resolution-assets/work-640_x_426.jpg 640w,
+                            ./resolution-assets/work-960_x_640.jpg 960w" 
+                        sizes="(max-width: 320px) 320px,
+                            (max-width: 640px) 640px,
+                            (max-width: 960px) 960px"
+                        src="./resolution-assets/work-640_x_426.jpg" alt="mix of LaslesVPN employees" class="divide-img">
+
                 <div class="open-container">
                     <!-- set divs seperate to flex 2 boxes side by side -->
                     
@@ -131,7 +138,7 @@
                     <a href="#" aria-label="become partner link">Become Partner</a>
                 </div>
             </div>
-            </div>
+            
         </footer>
     </div>
         
