@@ -91,6 +91,25 @@ ul {
     align-self: center;
 }
 
+.nav-image:hover {
+    animation-name: logo-spin;
+    animation-duration: 8s;
+}
+
+@keyframes logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(720deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+}
+
 .nav-list {
     display: flex;
     gap: 1.5em;
@@ -388,7 +407,29 @@ section img {
     color: #f53838;
     background-color: white;
     border-radius: 10px;
+    animation-name: breathe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes breathe {
+  0% {
+    transform: scale(0.9);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 
 .card-sel {
     width: 100px;
