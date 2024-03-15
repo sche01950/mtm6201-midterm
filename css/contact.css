@@ -78,6 +78,25 @@ ul {
     align-self: center;
 }
 
+.nav-image:hover {
+    animation-name: logo-spin;
+    animation-duration: 8s;
+}
+
+@keyframes logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(720deg);
+    }
+
+    95% {
+        transform: rotate(0deg);
+    }
+}
+
 .nav-list {
     display: flex;
     gap: 1.5em;
